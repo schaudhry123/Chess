@@ -1,0 +1,176 @@
+\hypertarget{classmain_1_1_game_controller}{}\section{main.\+Game\+Controller Class Reference}
+\label{classmain_1_1_game_controller}\index{main.\+Game\+Controller@{main.\+Game\+Controller}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmain_1_1_game_controller_a455fa762af5d53a326a0c586fe4dcfe4}{Game\+Controller} ()
+\item 
+String \hyperlink{classmain_1_1_game_controller_acd8e5da713b1029f841ddd7fe9b54d0d}{get\+Current\+Move\+Color} ()
+\item 
+void \hyperlink{classmain_1_1_game_controller_a988e49925efe78aff8e776af38964b7b}{run\+Game} ()
+\item 
+void \hyperlink{classmain_1_1_game_controller_aa8c33e3c78ef79c96207ee507fe4f29b}{reset\+Game\+State} ()
+\item 
+void \hyperlink{classmain_1_1_game_controller_a810118fdb7712c718031ecc6464f3123}{reset\+Current\+Move\+State} ()
+\item 
+void \hyperlink{classmain_1_1_game_controller_a46df83552d6ea7c824e3eb13dc95d6c4}{piece\+Square\+Click} (int x, int y)
+\item 
+void \hyperlink{classmain_1_1_game_controller_a469b3da25d6a5ee02984379328262965}{empty\+Square\+Click} (int x, int y)
+\item 
+\hypertarget{classmain_1_1_game_controller_a88954a71a73f53a1c0be604dc99d235f}{}\label{classmain_1_1_game_controller_a88954a71a73f53a1c0be604dc99d235f} 
+void {\bfseries handle\+Game\+Start} ()
+\item 
+void \hyperlink{classmain_1_1_game_controller_ac965ec2ce1c31547f9d219acca840629}{handle\+Game\+Undo} ()
+\item 
+void \hyperlink{classmain_1_1_game_controller_a328600841ad583141ff90225ef520d82}{handle\+Game\+Restart} ()
+\item 
+void \hyperlink{classmain_1_1_game_controller_a864236ccf74601951d818826253123d4}{handle\+Game\+Forfeit} ()
+\item 
+void \hyperlink{classmain_1_1_game_controller_a8291acf4ec3e1dc1cabdcb2a23c70e16}{handle\+Game\+Quit} ()
+\item 
+void \hyperlink{classmain_1_1_game_controller_ae75c41f7d73fe335be348d54a8e8c4e6}{handle\+Game\+Custom} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classmain_1_1_game_controller_a92e6cb717e1d095d52e1f3db9899b3b4}{sleep} (int ms)
+\item 
+static void \hyperlink{classmain_1_1_game_controller_a868da5d6ac8b5b1d1c90cfb3957e2c3d}{main} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmain_1_1_game_controller_a7aecbb578b9ec77925dd8a5fbd1c3841}{}\label{classmain_1_1_game_controller_a7aecbb578b9ec77925dd8a5fbd1c3841} 
+static int {\bfseries length} = 8
+\item 
+\hypertarget{classmain_1_1_game_controller_a7b79e272fdf025df06ef83134c5f00f5}{}\label{classmain_1_1_game_controller_a7b79e272fdf025df06ef83134c5f00f5} 
+static int {\bfseries width} = 8
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmain_1_1_game_controller_a8a1459a02deb30c69520506ca6d52e4d}{}\label{classmain_1_1_game_controller_a8a1459a02deb30c69520506ca6d52e4d} 
+\hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} {\bfseries start\+Coordinate} = null
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmain_1_1_game_controller_a455fa762af5d53a326a0c586fe4dcfe4}{}\label{classmain_1_1_game_controller_a455fa762af5d53a326a0c586fe4dcfe4} 
+\index{main\+::\+Game\+Controller@{main\+::\+Game\+Controller}!Game\+Controller@{Game\+Controller}}
+\index{Game\+Controller@{Game\+Controller}!main\+::\+Game\+Controller@{main\+::\+Game\+Controller}}
+\subsubsection{\texorpdfstring{Game\+Controller()}{GameController()}}
+{\footnotesize\ttfamily main.\+Game\+Controller.\+Game\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hyperlink{classmain_1_1_game_controller}{Game\+Controller} constructor which runs the game 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmain_1_1_game_controller_a469b3da25d6a5ee02984379328262965}{}\label{classmain_1_1_game_controller_a469b3da25d6a5ee02984379328262965} 
+\index{main\+::\+Game\+Controller@{main\+::\+Game\+Controller}!empty\+Square\+Click@{empty\+Square\+Click}}
+\index{empty\+Square\+Click@{empty\+Square\+Click}!main\+::\+Game\+Controller@{main\+::\+Game\+Controller}}
+\subsubsection{\texorpdfstring{empty\+Square\+Click()}{emptySquareClick()}}
+{\footnotesize\ttfamily void main.\+Game\+Controller.\+empty\+Square\+Click (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Action to take when an empty square is clicked If a piece has already been selected, check if the clicked square is in the set of possible moves for the piece. If it is, try making the move to see if it puts the player in check. If not, alert the player of the invalid move 
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmain_1_1_game_controller_acd8e5da713b1029f841ddd7fe9b54d0d}{}\label{classmain_1_1_game_controller_acd8e5da713b1029f841ddd7fe9b54d0d} 
+\index{main\+::\+Game\+Controller@{main\+::\+Game\+Controller}!get\+Current\+Move\+Color@{get\+Current\+Move\+Color}}
+\index{get\+Current\+Move\+Color@{get\+Current\+Move\+Color}!main\+::\+Game\+Controller@{main\+::\+Game\+Controller}}
+\subsubsection{\texorpdfstring{get\+Current\+Move\+Color()}{getCurrentMoveColor()}}
+{\footnotesize\ttfamily String main.\+Game\+Controller.\+get\+Current\+Move\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the current move color \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classmain_1_1_game_controller_ae75c41f7d73fe335be348d54a8e8c4e6}{}\label{classmain_1_1_game_controller_ae75c41f7d73fe335be348d54a8e8c4e6} 
+\index{main\+::\+Game\+Controller@{main\+::\+Game\+Controller}!handle\+Game\+Custom@{handle\+Game\+Custom}}
+\index{handle\+Game\+Custom@{handle\+Game\+Custom}!main\+::\+Game\+Controller@{main\+::\+Game\+Controller}}
+\subsubsection{\texorpdfstring{handle\+Game\+Custom()}{handleGameCustom()}}
+{\footnotesize\ttfamily void main.\+Game\+Controller.\+handle\+Game\+Custom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Add the custom pieces to the model Can only be used when the game has not started yet \hypertarget{classmain_1_1_game_controller_a864236ccf74601951d818826253123d4}{}\label{classmain_1_1_game_controller_a864236ccf74601951d818826253123d4} 
+\index{main\+::\+Game\+Controller@{main\+::\+Game\+Controller}!handle\+Game\+Forfeit@{handle\+Game\+Forfeit}}
+\index{handle\+Game\+Forfeit@{handle\+Game\+Forfeit}!main\+::\+Game\+Controller@{main\+::\+Game\+Controller}}
+\subsubsection{\texorpdfstring{handle\+Game\+Forfeit()}{handleGameForfeit()}}
+{\footnotesize\ttfamily void main.\+Game\+Controller.\+handle\+Game\+Forfeit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+If the game is forfeited, end the current game Mark the other player as the winner of this game \hypertarget{classmain_1_1_game_controller_a8291acf4ec3e1dc1cabdcb2a23c70e16}{}\label{classmain_1_1_game_controller_a8291acf4ec3e1dc1cabdcb2a23c70e16} 
+\index{main\+::\+Game\+Controller@{main\+::\+Game\+Controller}!handle\+Game\+Quit@{handle\+Game\+Quit}}
+\index{handle\+Game\+Quit@{handle\+Game\+Quit}!main\+::\+Game\+Controller@{main\+::\+Game\+Controller}}
+\subsubsection{\texorpdfstring{handle\+Game\+Quit()}{handleGameQuit()}}
+{\footnotesize\ttfamily void main.\+Game\+Controller.\+handle\+Game\+Quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+If the game is quit, exit the game. \hypertarget{classmain_1_1_game_controller_a328600841ad583141ff90225ef520d82}{}\label{classmain_1_1_game_controller_a328600841ad583141ff90225ef520d82} 
+\index{main\+::\+Game\+Controller@{main\+::\+Game\+Controller}!handle\+Game\+Restart@{handle\+Game\+Restart}}
+\index{handle\+Game\+Restart@{handle\+Game\+Restart}!main\+::\+Game\+Controller@{main\+::\+Game\+Controller}}
+\subsubsection{\texorpdfstring{handle\+Game\+Restart()}{handleGameRestart()}}
+{\footnotesize\ttfamily void main.\+Game\+Controller.\+handle\+Game\+Restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+If the restart button is pressed, pop up a confirmation If no or window closed, ignore. If yes, notify the players, stop the current game, and reset the G\+UI state \hypertarget{classmain_1_1_game_controller_ac965ec2ce1c31547f9d219acca840629}{}\label{classmain_1_1_game_controller_ac965ec2ce1c31547f9d219acca840629} 
+\index{main\+::\+Game\+Controller@{main\+::\+Game\+Controller}!handle\+Game\+Undo@{handle\+Game\+Undo}}
+\index{handle\+Game\+Undo@{handle\+Game\+Undo}!main\+::\+Game\+Controller@{main\+::\+Game\+Controller}}
+\subsubsection{\texorpdfstring{handle\+Game\+Undo()}{handleGameUndo()}}
+{\footnotesize\ttfamily void main.\+Game\+Controller.\+handle\+Game\+Undo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Undo the move if last\+Move is not null (i.\+e. move has been made or move not already undone). If undoing the move, switch turns back to the original player\textquotesingle{}s move Else, alert the player that an undo is not valid \hypertarget{classmain_1_1_game_controller_a868da5d6ac8b5b1d1c90cfb3957e2c3d}{}\label{classmain_1_1_game_controller_a868da5d6ac8b5b1d1c90cfb3957e2c3d} 
+\index{main\+::\+Game\+Controller@{main\+::\+Game\+Controller}!main@{main}}
+\index{main@{main}!main\+::\+Game\+Controller@{main\+::\+Game\+Controller}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void main.\+Game\+Controller.\+main (\begin{DoxyParamCaption}\item[{String \mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new game 
+\begin{DoxyParams}{Parameters}
+{\em args} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmain_1_1_game_controller_a46df83552d6ea7c824e3eb13dc95d6c4}{}\label{classmain_1_1_game_controller_a46df83552d6ea7c824e3eb13dc95d6c4} 
+\index{main\+::\+Game\+Controller@{main\+::\+Game\+Controller}!piece\+Square\+Click@{piece\+Square\+Click}}
+\index{piece\+Square\+Click@{piece\+Square\+Click}!main\+::\+Game\+Controller@{main\+::\+Game\+Controller}}
+\subsubsection{\texorpdfstring{piece\+Square\+Click()}{pieceSquareClick()}}
+{\footnotesize\ttfamily void main.\+Game\+Controller.\+piece\+Square\+Click (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Action to take when a piece square is clicked If no piece has already been selected, select this piece if a valid piece 
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmain_1_1_game_controller_a810118fdb7712c718031ecc6464f3123}{}\label{classmain_1_1_game_controller_a810118fdb7712c718031ecc6464f3123} 
+\index{main\+::\+Game\+Controller@{main\+::\+Game\+Controller}!reset\+Current\+Move\+State@{reset\+Current\+Move\+State}}
+\index{reset\+Current\+Move\+State@{reset\+Current\+Move\+State}!main\+::\+Game\+Controller@{main\+::\+Game\+Controller}}
+\subsubsection{\texorpdfstring{reset\+Current\+Move\+State()}{resetCurrentMoveState()}}
+{\footnotesize\ttfamily void main.\+Game\+Controller.\+reset\+Current\+Move\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reset the G\+UI state and highlights \hypertarget{classmain_1_1_game_controller_aa8c33e3c78ef79c96207ee507fe4f29b}{}\label{classmain_1_1_game_controller_aa8c33e3c78ef79c96207ee507fe4f29b} 
+\index{main\+::\+Game\+Controller@{main\+::\+Game\+Controller}!reset\+Game\+State@{reset\+Game\+State}}
+\index{reset\+Game\+State@{reset\+Game\+State}!main\+::\+Game\+Controller@{main\+::\+Game\+Controller}}
+\subsubsection{\texorpdfstring{reset\+Game\+State()}{resetGameState()}}
+{\footnotesize\ttfamily void main.\+Game\+Controller.\+reset\+Game\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reset the game states of forfeit, restart, and quit \hypertarget{classmain_1_1_game_controller_a988e49925efe78aff8e776af38964b7b}{}\label{classmain_1_1_game_controller_a988e49925efe78aff8e776af38964b7b} 
+\index{main\+::\+Game\+Controller@{main\+::\+Game\+Controller}!run\+Game@{run\+Game}}
+\index{run\+Game@{run\+Game}!main\+::\+Game\+Controller@{main\+::\+Game\+Controller}}
+\subsubsection{\texorpdfstring{run\+Game()}{runGame()}}
+{\footnotesize\ttfamily void main.\+Game\+Controller.\+run\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Keep looping to run the game until the current game is stopped \hypertarget{classmain_1_1_game_controller_a92e6cb717e1d095d52e1f3db9899b3b4}{}\label{classmain_1_1_game_controller_a92e6cb717e1d095d52e1f3db9899b3b4} 
+\index{main\+::\+Game\+Controller@{main\+::\+Game\+Controller}!sleep@{sleep}}
+\index{sleep@{sleep}!main\+::\+Game\+Controller@{main\+::\+Game\+Controller}}
+\subsubsection{\texorpdfstring{sleep()}{sleep()}}
+{\footnotesize\ttfamily static void main.\+Game\+Controller.\+sleep (\begin{DoxyParamCaption}\item[{int}]{ms }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sleep a thread ms number of milliseconds Catch and print out any exceptions 
+\begin{DoxyParams}{Parameters}
+{\em ms} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/Game\+Controller.\+java\end{DoxyCompactItemize}

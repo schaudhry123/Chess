@@ -1,0 +1,234 @@
+\hypertarget{classmain_1_1model_1_1_board}{}\section{main.\+model.\+Board Class Reference}
+\label{classmain_1_1model_1_1_board}\index{main.\+model.\+Board@{main.\+model.\+Board}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmain_1_1model_1_1_board_aa960cea7bc44db0fdb54d18767579c52}{Board} (int length, int width)
+\item 
+\hyperlink{classmain_1_1model_1_1_board_a96612d9907fdc7144072b39701f3c98f}{Board} (int length, int width, String stalemate)
+\item 
+\hyperlink{classmain_1_1pieces_1_1_piece}{Piece} \hyperlink{classmain_1_1model_1_1_board_a58b12960567f10637634a020d9bc7ed6}{get\+King} (String color)
+\item 
+void \hyperlink{classmain_1_1model_1_1_board_ac89ac2b16c2e7ed3e0ff9160b471d99c}{set\+Piece} (\hyperlink{classmain_1_1pieces_1_1_piece}{Piece} piece, \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} coordinate)
+\item 
+void \hyperlink{classmain_1_1model_1_1_board_a410cd03e774ce09fce169f8b047e413a}{set\+Piece} (\hyperlink{classmain_1_1pieces_1_1_piece}{Piece} piece, int x, int y)
+\item 
+void \hyperlink{classmain_1_1model_1_1_board_a267a2fd3d08cb25c4d35ceb9c61e5402}{remove\+Piece} (\hyperlink{classmain_1_1pieces_1_1_piece}{Piece} piece)
+\item 
+boolean \hyperlink{classmain_1_1model_1_1_board_a8924f9087f10a4554958ac48480e9b0b}{move\+Piece} (\hyperlink{classmain_1_1pieces_1_1_piece}{Piece} piece, \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} coordinate)
+\item 
+\hyperlink{classmain_1_1pieces_1_1_piece}{Piece} \hyperlink{classmain_1_1model_1_1_board_abf3eb07b33b96a983bd98c26e7390ed4}{move\+Piece\+To\+Coordinate} (\hyperlink{classmain_1_1pieces_1_1_piece}{Piece} piece, \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} coordinate)
+\item 
+boolean \hyperlink{classmain_1_1model_1_1_board_ac9396eab4affaccf9b66331a98f6e0d1}{is\+In\+Check} (String color)
+\item 
+void \hyperlink{classmain_1_1model_1_1_board_a6d983017a927def6bf7263b8a50c293a}{undo\+Move} (\hyperlink{classmain_1_1pieces_1_1_piece}{Piece} piece, \hyperlink{classmain_1_1pieces_1_1_piece}{Piece} existing, \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} start, \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} destination)
+\item 
+boolean \hyperlink{classmain_1_1model_1_1_board_abb5dfd9e2e597dd686351c1f06fbcb38}{is\+In\+Check\+Mate} (String color)
+\item 
+boolean \hyperlink{classmain_1_1model_1_1_board_aa3457acaf5b59679081273fc1e683be5}{has\+Any\+Moves} (String color)
+\item 
+boolean \hyperlink{classmain_1_1model_1_1_board_a6c144f940cc67d3f2f648f7fcc58294b}{is\+In\+Stalemate} (String color)
+\item 
+void \hyperlink{classmain_1_1model_1_1_board_ae838db532812c97d60e76ecd58027cc9}{print\+Board} ()
+\item 
+void \hyperlink{classmain_1_1model_1_1_board_ab822fe6d82c7951dbf950a6df4ee8b85}{initialize\+Piece} (String piece\+Type, int x, int y, String color)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmain_1_1model_1_1_board_a537a632327e7e27f10edcc2abe41de9f}{}\label{classmain_1_1model_1_1_board_a537a632327e7e27f10edcc2abe41de9f} 
+static int {\bfseries get\+Length} ()
+\item 
+\hypertarget{classmain_1_1model_1_1_board_a00371e25d2973e637da7a768d1e2551a}{}\label{classmain_1_1model_1_1_board_a00371e25d2973e637da7a768d1e2551a} 
+static int {\bfseries get\+Width} ()
+\item 
+static \hyperlink{classmain_1_1pieces_1_1_piece}{Piece} \hyperlink{classmain_1_1model_1_1_board_a9be517cf5bb1584069e14d202b4d708b}{get\+Piece} (int x, int y)
+\item 
+static \hyperlink{classmain_1_1pieces_1_1_piece}{Piece} \hyperlink{classmain_1_1model_1_1_board_acf3676f6e319705c9ed713d1c9fd097a}{get\+Piece} (\hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} coordinate)
+\item 
+static \hyperlink{classmain_1_1pieces_1_1_piece}{Piece} \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classmain_1_1model_1_1_board_af7321b4ae3a390e48d3dd6c188de5d2e}{get\+Board} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by Samir on 9/1/16. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmain_1_1model_1_1_board_aa960cea7bc44db0fdb54d18767579c52}{}\label{classmain_1_1model_1_1_board_aa960cea7bc44db0fdb54d18767579c52} 
+\index{main\+::model\+::\+Board@{main\+::model\+::\+Board}!Board@{Board}}
+\index{Board@{Board}!main\+::model\+::\+Board@{main\+::model\+::\+Board}}
+\subsubsection{\texorpdfstring{Board()}{Board()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily main.\+model.\+Board.\+Board (\begin{DoxyParamCaption}\item[{int}]{length,  }\item[{int}]{width }\end{DoxyParamCaption})}
+
+Creates a board\+G\+UI with the dimensions of board\+Length and board\+Width \hypertarget{classmain_1_1model_1_1_board_a96612d9907fdc7144072b39701f3c98f}{}\label{classmain_1_1model_1_1_board_a96612d9907fdc7144072b39701f3c98f} 
+\index{main\+::model\+::\+Board@{main\+::model\+::\+Board}!Board@{Board}}
+\index{Board@{Board}!main\+::model\+::\+Board@{main\+::model\+::\+Board}}
+\subsubsection{\texorpdfstring{Board()}{Board()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily main.\+model.\+Board.\+Board (\begin{DoxyParamCaption}\item[{int}]{length,  }\item[{int}]{width,  }\item[{String}]{stalemate }\end{DoxyParamCaption})}
+
+Custom constructor (for testing) to construct a stalemate scenario 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmain_1_1model_1_1_board_af7321b4ae3a390e48d3dd6c188de5d2e}{}\label{classmain_1_1model_1_1_board_af7321b4ae3a390e48d3dd6c188de5d2e} 
+\index{main\+::model\+::\+Board@{main\+::model\+::\+Board}!get\+Board@{get\+Board}}
+\index{get\+Board@{get\+Board}!main\+::model\+::\+Board@{main\+::model\+::\+Board}}
+\subsubsection{\texorpdfstring{get\+Board()}{getBoard()}}
+{\footnotesize\ttfamily static \hyperlink{classmain_1_1pieces_1_1_piece}{Piece} \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} main.\+model.\+Board.\+get\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\subparagraph*{}
+
+\hyperlink{classmain_1_1model_1_1_board}{Board} Update Methods \subparagraph*{}
+
+Returns the board\+G\+UI and piece locations \hypertarget{classmain_1_1model_1_1_board_a58b12960567f10637634a020d9bc7ed6}{}\label{classmain_1_1model_1_1_board_a58b12960567f10637634a020d9bc7ed6} 
+\index{main\+::model\+::\+Board@{main\+::model\+::\+Board}!get\+King@{get\+King}}
+\index{get\+King@{get\+King}!main\+::model\+::\+Board@{main\+::model\+::\+Board}}
+\subsubsection{\texorpdfstring{get\+King()}{getKing()}}
+{\footnotesize\ttfamily \hyperlink{classmain_1_1pieces_1_1_piece}{Piece} main.\+model.\+Board.\+get\+King (\begin{DoxyParamCaption}\item[{String}]{color }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classmain_1_1model_1_1_board_a9be517cf5bb1584069e14d202b4d708b}{}\label{classmain_1_1model_1_1_board_a9be517cf5bb1584069e14d202b4d708b} 
+\index{main\+::model\+::\+Board@{main\+::model\+::\+Board}!get\+Piece@{get\+Piece}}
+\index{get\+Piece@{get\+Piece}!main\+::model\+::\+Board@{main\+::model\+::\+Board}}
+\subsubsection{\texorpdfstring{get\+Piece()}{getPiece()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \hyperlink{classmain_1_1pieces_1_1_piece}{Piece} main.\+model.\+Board.\+get\+Piece (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Return the piece at the location given by x and y \hypertarget{classmain_1_1model_1_1_board_acf3676f6e319705c9ed713d1c9fd097a}{}\label{classmain_1_1model_1_1_board_acf3676f6e319705c9ed713d1c9fd097a} 
+\index{main\+::model\+::\+Board@{main\+::model\+::\+Board}!get\+Piece@{get\+Piece}}
+\index{get\+Piece@{get\+Piece}!main\+::model\+::\+Board@{main\+::model\+::\+Board}}
+\subsubsection{\texorpdfstring{get\+Piece()}{getPiece()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \hyperlink{classmain_1_1pieces_1_1_piece}{Piece} main.\+model.\+Board.\+get\+Piece (\begin{DoxyParamCaption}\item[{\hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate}}]{coordinate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Return the piece at the corresponding coordinate \hypertarget{classmain_1_1model_1_1_board_aa3457acaf5b59679081273fc1e683be5}{}\label{classmain_1_1model_1_1_board_aa3457acaf5b59679081273fc1e683be5} 
+\index{main\+::model\+::\+Board@{main\+::model\+::\+Board}!has\+Any\+Moves@{has\+Any\+Moves}}
+\index{has\+Any\+Moves@{has\+Any\+Moves}!main\+::model\+::\+Board@{main\+::model\+::\+Board}}
+\subsubsection{\texorpdfstring{has\+Any\+Moves()}{hasAnyMoves()}}
+{\footnotesize\ttfamily boolean main.\+model.\+Board.\+has\+Any\+Moves (\begin{DoxyParamCaption}\item[{String}]{color }\end{DoxyParamCaption})}
+
+Function to check if a player has any valid moves that they can make For all of their pieces, check if any piece can make a move without being in check 
+\begin{DoxyParams}{Parameters}
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if they do, false if they don\textquotesingle{}t 
+\end{DoxyReturn}
+\hypertarget{classmain_1_1model_1_1_board_ab822fe6d82c7951dbf950a6df4ee8b85}{}\label{classmain_1_1model_1_1_board_ab822fe6d82c7951dbf950a6df4ee8b85} 
+\index{main\+::model\+::\+Board@{main\+::model\+::\+Board}!initialize\+Piece@{initialize\+Piece}}
+\index{initialize\+Piece@{initialize\+Piece}!main\+::model\+::\+Board@{main\+::model\+::\+Board}}
+\subsubsection{\texorpdfstring{initialize\+Piece()}{initializePiece()}}
+{\footnotesize\ttfamily void main.\+model.\+Board.\+initialize\+Piece (\begin{DoxyParamCaption}\item[{String}]{piece\+Type,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{String}]{color }\end{DoxyParamCaption})}
+
+\subparagraph*{}
+
+Initialization Methods \subparagraph*{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em piece\+Type} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmain_1_1model_1_1_board_ac9396eab4affaccf9b66331a98f6e0d1}{}\label{classmain_1_1model_1_1_board_ac9396eab4affaccf9b66331a98f6e0d1} 
+\index{main\+::model\+::\+Board@{main\+::model\+::\+Board}!is\+In\+Check@{is\+In\+Check}}
+\index{is\+In\+Check@{is\+In\+Check}!main\+::model\+::\+Board@{main\+::model\+::\+Board}}
+\subsubsection{\texorpdfstring{is\+In\+Check()}{isInCheck()}}
+{\footnotesize\ttfamily boolean main.\+model.\+Board.\+is\+In\+Check (\begin{DoxyParamCaption}\item[{String}]{color }\end{DoxyParamCaption})}
+
+Checks the board\+G\+UI status for check Iterates through every piece of the opposing team to see if any pieces can attack the king 
+\begin{DoxyParams}{Parameters}
+{\em color} & Color of the player to look at for check \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmain_1_1model_1_1_board_abb5dfd9e2e597dd686351c1f06fbcb38}{}\label{classmain_1_1model_1_1_board_abb5dfd9e2e597dd686351c1f06fbcb38} 
+\index{main\+::model\+::\+Board@{main\+::model\+::\+Board}!is\+In\+Check\+Mate@{is\+In\+Check\+Mate}}
+\index{is\+In\+Check\+Mate@{is\+In\+Check\+Mate}!main\+::model\+::\+Board@{main\+::model\+::\+Board}}
+\subsubsection{\texorpdfstring{is\+In\+Check\+Mate()}{isInCheckMate()}}
+{\footnotesize\ttfamily boolean main.\+model.\+Board.\+is\+In\+Check\+Mate (\begin{DoxyParamCaption}\item[{String}]{color }\end{DoxyParamCaption})}
+
+Check if the player of this color is in checkmate Look at all of your piece\textquotesingle{}s moves, if any of them break check then return false Else if no move removes check, return true 
+\begin{DoxyParams}{Parameters}
+{\em color} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True/\+False if in checkmate 
+\end{DoxyReturn}
+\hypertarget{classmain_1_1model_1_1_board_a6c144f940cc67d3f2f648f7fcc58294b}{}\label{classmain_1_1model_1_1_board_a6c144f940cc67d3f2f648f7fcc58294b} 
+\index{main\+::model\+::\+Board@{main\+::model\+::\+Board}!is\+In\+Stalemate@{is\+In\+Stalemate}}
+\index{is\+In\+Stalemate@{is\+In\+Stalemate}!main\+::model\+::\+Board@{main\+::model\+::\+Board}}
+\subsubsection{\texorpdfstring{is\+In\+Stalemate()}{isInStalemate()}}
+{\footnotesize\ttfamily boolean main.\+model.\+Board.\+is\+In\+Stalemate (\begin{DoxyParamCaption}\item[{String}]{color }\end{DoxyParamCaption})}
+
+Check if the board\+G\+UI is in stalemate If the player is not in check but has no legal moves. \hypertarget{classmain_1_1model_1_1_board_a8924f9087f10a4554958ac48480e9b0b}{}\label{classmain_1_1model_1_1_board_a8924f9087f10a4554958ac48480e9b0b} 
+\index{main\+::model\+::\+Board@{main\+::model\+::\+Board}!move\+Piece@{move\+Piece}}
+\index{move\+Piece@{move\+Piece}!main\+::model\+::\+Board@{main\+::model\+::\+Board}}
+\subsubsection{\texorpdfstring{move\+Piece()}{movePiece()}}
+{\footnotesize\ttfamily boolean main.\+model.\+Board.\+move\+Piece (\begin{DoxyParamCaption}\item[{\hyperlink{classmain_1_1pieces_1_1_piece}{Piece}}]{piece,  }\item[{\hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate}}]{coordinate }\end{DoxyParamCaption})}
+
+\hyperlink{classmain_1_1model_1_1_move}{Move} a piece from its coordinate to a new coordinate if a valid move. If the player is in check after the move, reverts the move and fails. Else, makes the moves. \begin{DoxyReturn}{Returns}
+True/false if the move succeeds or fails 
+\end{DoxyReturn}
+\hypertarget{classmain_1_1model_1_1_board_abf3eb07b33b96a983bd98c26e7390ed4}{}\label{classmain_1_1model_1_1_board_abf3eb07b33b96a983bd98c26e7390ed4} 
+\index{main\+::model\+::\+Board@{main\+::model\+::\+Board}!move\+Piece\+To\+Coordinate@{move\+Piece\+To\+Coordinate}}
+\index{move\+Piece\+To\+Coordinate@{move\+Piece\+To\+Coordinate}!main\+::model\+::\+Board@{main\+::model\+::\+Board}}
+\subsubsection{\texorpdfstring{move\+Piece\+To\+Coordinate()}{movePieceToCoordinate()}}
+{\footnotesize\ttfamily \hyperlink{classmain_1_1pieces_1_1_piece}{Piece} main.\+model.\+Board.\+move\+Piece\+To\+Coordinate (\begin{DoxyParamCaption}\item[{\hyperlink{classmain_1_1pieces_1_1_piece}{Piece}}]{piece,  }\item[{\hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate}}]{coordinate }\end{DoxyParamCaption})}
+
+Helper function to move a piece Removes any piece already at the coordinate and move this piece there \hypertarget{classmain_1_1model_1_1_board_ae838db532812c97d60e76ecd58027cc9}{}\label{classmain_1_1model_1_1_board_ae838db532812c97d60e76ecd58027cc9} 
+\index{main\+::model\+::\+Board@{main\+::model\+::\+Board}!print\+Board@{print\+Board}}
+\index{print\+Board@{print\+Board}!main\+::model\+::\+Board@{main\+::model\+::\+Board}}
+\subsubsection{\texorpdfstring{print\+Board()}{printBoard()}}
+{\footnotesize\ttfamily void main.\+model.\+Board.\+print\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Print out the board\+G\+UI and its current state \hypertarget{classmain_1_1model_1_1_board_a267a2fd3d08cb25c4d35ceb9c61e5402}{}\label{classmain_1_1model_1_1_board_a267a2fd3d08cb25c4d35ceb9c61e5402} 
+\index{main\+::model\+::\+Board@{main\+::model\+::\+Board}!remove\+Piece@{remove\+Piece}}
+\index{remove\+Piece@{remove\+Piece}!main\+::model\+::\+Board@{main\+::model\+::\+Board}}
+\subsubsection{\texorpdfstring{remove\+Piece()}{removePiece()}}
+{\footnotesize\ttfamily void main.\+model.\+Board.\+remove\+Piece (\begin{DoxyParamCaption}\item[{\hyperlink{classmain_1_1pieces_1_1_piece}{Piece}}]{piece }\end{DoxyParamCaption})}
+
+Remove a piece from the map and board\+G\+UI \hypertarget{classmain_1_1model_1_1_board_ac89ac2b16c2e7ed3e0ff9160b471d99c}{}\label{classmain_1_1model_1_1_board_ac89ac2b16c2e7ed3e0ff9160b471d99c} 
+\index{main\+::model\+::\+Board@{main\+::model\+::\+Board}!set\+Piece@{set\+Piece}}
+\index{set\+Piece@{set\+Piece}!main\+::model\+::\+Board@{main\+::model\+::\+Board}}
+\subsubsection{\texorpdfstring{set\+Piece()}{setPiece()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void main.\+model.\+Board.\+set\+Piece (\begin{DoxyParamCaption}\item[{\hyperlink{classmain_1_1pieces_1_1_piece}{Piece}}]{piece,  }\item[{\hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate}}]{coordinate }\end{DoxyParamCaption})}
+
+Sets a piece at the location on the board\+G\+UI and the map \hypertarget{classmain_1_1model_1_1_board_a410cd03e774ce09fce169f8b047e413a}{}\label{classmain_1_1model_1_1_board_a410cd03e774ce09fce169f8b047e413a} 
+\index{main\+::model\+::\+Board@{main\+::model\+::\+Board}!set\+Piece@{set\+Piece}}
+\index{set\+Piece@{set\+Piece}!main\+::model\+::\+Board@{main\+::model\+::\+Board}}
+\subsubsection{\texorpdfstring{set\+Piece()}{setPiece()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void main.\+model.\+Board.\+set\+Piece (\begin{DoxyParamCaption}\item[{\hyperlink{classmain_1_1pieces_1_1_piece}{Piece}}]{piece,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Sets a piece at the x and y coordinates on the board\+G\+UI and map Helper function for initialization of pieces on board\+G\+UI \hypertarget{classmain_1_1model_1_1_board_a6d983017a927def6bf7263b8a50c293a}{}\label{classmain_1_1model_1_1_board_a6d983017a927def6bf7263b8a50c293a} 
+\index{main\+::model\+::\+Board@{main\+::model\+::\+Board}!undo\+Move@{undo\+Move}}
+\index{undo\+Move@{undo\+Move}!main\+::model\+::\+Board@{main\+::model\+::\+Board}}
+\subsubsection{\texorpdfstring{undo\+Move()}{undoMove()}}
+{\footnotesize\ttfamily void main.\+model.\+Board.\+undo\+Move (\begin{DoxyParamCaption}\item[{\hyperlink{classmain_1_1pieces_1_1_piece}{Piece}}]{piece,  }\item[{\hyperlink{classmain_1_1pieces_1_1_piece}{Piece}}]{existing,  }\item[{\hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate}}]{start,  }\item[{\hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate}}]{destination }\end{DoxyParamCaption})}
+
+Undo a move that was previously made 
+\begin{DoxyParams}{Parameters}
+{\em piece} & piece that made the move \\
+\hline
+{\em existing} & piece that existed at the destination coordinate (null if none there) \\
+\hline
+{\em start} & coordinate that piece started at \\
+\hline
+{\em destination} & coordinate that piece moves to \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/model/Board.\+java\end{DoxyCompactItemize}

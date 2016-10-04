@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['testfalsestalematescenario',['testFalseStalemateScenario',['../classtests_1_1game_1_1_board_test.html#aafeeee28a08b09f5fee754f011ff05b1',1,'tests::game::BoardTest']]],
+  ['teststalematescenario',['testStalemateScenario',['../classtests_1_1game_1_1_board_test.html#a49e4adc799868b9e82bfc217f4d569d8',1,'tests::game::BoardTest']]],
+  ['tostring',['toString',['../classmain_1_1model_1_1_coordinate.html#abf2f4212b8c3dd47c5cbc735935733f3',1,'main.model.Coordinate.toString()'],['../classmain_1_1pieces_1_1_bishop.html#a6621662a277c0a45fb317b7d37612410',1,'main.pieces.Bishop.toString()'],['../classmain_1_1pieces_1_1_ferz.html#ad4b187dafd0c861a6dbb0874e4245b79',1,'main.pieces.Ferz.toString()'],['../classmain_1_1pieces_1_1_king.html#aa93a1ae4998482975674eeca33112961',1,'main.pieces.King.toString()'],['../classmain_1_1pieces_1_1_knight.html#aaf2e8a203e5875f9429eb528616adc53',1,'main.pieces.Knight.toString()'],['../classmain_1_1pieces_1_1_piece.html#a528845eb51d394c21fd0f3d8a8011696',1,'main.pieces.Piece.toString()'],['../classmain_1_1pieces_1_1_princess.html#a8be1df155dee4a3fbcc4ae1eebea0ff4',1,'main.pieces.Princess.toString()'],['../classmain_1_1pieces_1_1_queen.html#a87b715eb4a56c840d1e1830264d23a56',1,'main.pieces.Queen.toString()'],['../classmain_1_1pieces_1_1_rook.html#aa4408e34efd361045d25687da3103103',1,'main.pieces.Rook.toString()']]]
+];

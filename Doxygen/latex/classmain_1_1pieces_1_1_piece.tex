@@ -1,0 +1,222 @@
+\hypertarget{classmain_1_1pieces_1_1_piece}{}\section{main.\+pieces.\+Piece Class Reference}
+\label{classmain_1_1pieces_1_1_piece}\index{main.\+pieces.\+Piece@{main.\+pieces.\+Piece}}
+Inheritance diagram for main.\+pieces.\+Piece\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classmain_1_1pieces_1_1_piece}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract Array\+List$<$ \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} $>$ \hyperlink{classmain_1_1pieces_1_1_piece_a92a37b2f68604a6f2c8ece28d9a96080}{possible\+Moves} ()
+\item 
+abstract String \hyperlink{classmain_1_1pieces_1_1_piece_ae778ce746ff427326514c696cad72aba}{get\+Type} ()
+\item 
+abstract String \hyperlink{classmain_1_1pieces_1_1_piece_a528845eb51d394c21fd0f3d8a8011696}{to\+String} ()
+\item 
+String \hyperlink{classmain_1_1pieces_1_1_piece_a52545d99f7a6c36b99cfcf40fd0a9cef}{get\+Color} ()
+\item 
+\hypertarget{classmain_1_1pieces_1_1_piece_a2b808f44cec5a6b54ef073d1a89ea608}{}\label{classmain_1_1pieces_1_1_piece_a2b808f44cec5a6b54ef073d1a89ea608} 
+void {\bfseries set\+Color} (String color)
+\item 
+\hypertarget{classmain_1_1pieces_1_1_piece_a69d998939d06b2bb749632864e0402b8}{}\label{classmain_1_1pieces_1_1_piece_a69d998939d06b2bb749632864e0402b8} 
+\hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} {\bfseries get\+Coordinate} ()
+\item 
+\hypertarget{classmain_1_1pieces_1_1_piece_a7a6ab60bd575c3511957691989862745}{}\label{classmain_1_1pieces_1_1_piece_a7a6ab60bd575c3511957691989862745} 
+void {\bfseries set\+Coordinate} (\hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} coordinate)
+\item 
+void \hyperlink{classmain_1_1pieces_1_1_piece_a2ffc0c01f80d164e8d471272061545d9}{set\+Coordinate} (int x, int y)
+\item 
+void \hyperlink{classmain_1_1pieces_1_1_piece_a58d0ca1c1f09ffd2470a4aec1b7e6854}{remove\+Piece} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmain_1_1pieces_1_1_piece_a9f5e3f8b66b16fd732425936f63997ab}{}\label{classmain_1_1pieces_1_1_piece_a9f5e3f8b66b16fd732425936f63997ab} 
+String {\bfseries image\+Path}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmain_1_1pieces_1_1_piece_aef1e0909297d1b3fd0974b4be25751c4}{check\+All\+Diagonals} (Array\+List$<$ \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} $>$ moves, int x, int y)
+\item 
+void \hyperlink{classmain_1_1pieces_1_1_piece_ae50779c5a6de51ac05c6469e4660a82b}{check\+All\+Rows\+Columns} (Array\+List$<$ \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} $>$ moves, int x, int y)
+\item 
+void \hyperlink{classmain_1_1pieces_1_1_piece_a12f2f0e6677148c31488ebf6a68cebaf}{add\+Coordinates\+In\+Direction} (Array\+List$<$ \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} $>$ moves, int x, int y, int x\+Direction, int y\+Direction)
+\item 
+void \hyperlink{classmain_1_1pieces_1_1_piece_aae5cab0c47643b395e9c3050705b6fc9}{add\+Knight\+Coordinates} (Array\+List$<$ \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} $>$ moves, int x, int y)
+\item 
+boolean \hyperlink{classmain_1_1pieces_1_1_piece_a74326d9253471ad25f8edb83bec207f6}{is\+Empty\+Coordinate} (int x, int y)
+\item 
+boolean \hyperlink{classmain_1_1pieces_1_1_piece_a164f24eb41f07fe4cb93d960f24d8638}{is\+Coordinate\+Available} (int x, int y)
+\item 
+boolean \hyperlink{classmain_1_1pieces_1_1_piece_a44b1600e3e49f6fdcd3dca288db82fd4}{add\+Coordinate\+If\+Available} (Array\+List$<$ \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} $>$ moves, int x, int y)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by Samir on 9/1/16.
+
+Idea box\+: Pieces remember how many other pieces it has taken (i.\+e. level up) 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmain_1_1pieces_1_1_piece_a44b1600e3e49f6fdcd3dca288db82fd4}{}\label{classmain_1_1pieces_1_1_piece_a44b1600e3e49f6fdcd3dca288db82fd4} 
+\index{main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}!add\+Coordinate\+If\+Available@{add\+Coordinate\+If\+Available}}
+\index{add\+Coordinate\+If\+Available@{add\+Coordinate\+If\+Available}!main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{add\+Coordinate\+If\+Available()}{addCoordinateIfAvailable()}}
+{\footnotesize\ttfamily boolean main.\+pieces.\+Piece.\+add\+Coordinate\+If\+Available (\begin{DoxyParamCaption}\item[{Array\+List$<$ \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} $>$}]{moves,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Adds the coordinate indicated by location (x,y) to the moves Array\+List if it is available \hypertarget{classmain_1_1pieces_1_1_piece_a12f2f0e6677148c31488ebf6a68cebaf}{}\label{classmain_1_1pieces_1_1_piece_a12f2f0e6677148c31488ebf6a68cebaf} 
+\index{main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}!add\+Coordinates\+In\+Direction@{add\+Coordinates\+In\+Direction}}
+\index{add\+Coordinates\+In\+Direction@{add\+Coordinates\+In\+Direction}!main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{add\+Coordinates\+In\+Direction()}{addCoordinatesInDirection()}}
+{\footnotesize\ttfamily void main.\+pieces.\+Piece.\+add\+Coordinates\+In\+Direction (\begin{DoxyParamCaption}\item[{Array\+List$<$ \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} $>$}]{moves,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{x\+Direction,  }\item[{int}]{y\+Direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Check all the spaces in a direction given by x\+Direction and y\+Direction 
+\begin{DoxyParams}{Parameters}
+{\em moves} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em x\+Direction} & -\/1, 0, or +1 to indicate negative, zero, or positive x-\/direction \\
+\hline
+{\em y\+Direction} & -\/1, 0, or +1 to indicate negative, zero, or positive y-\/direction \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmain_1_1pieces_1_1_piece_aae5cab0c47643b395e9c3050705b6fc9}{}\label{classmain_1_1pieces_1_1_piece_aae5cab0c47643b395e9c3050705b6fc9} 
+\index{main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}!add\+Knight\+Coordinates@{add\+Knight\+Coordinates}}
+\index{add\+Knight\+Coordinates@{add\+Knight\+Coordinates}!main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{add\+Knight\+Coordinates()}{addKnightCoordinates()}}
+{\footnotesize\ttfamily void main.\+pieces.\+Piece.\+add\+Knight\+Coordinates (\begin{DoxyParamCaption}\item[{Array\+List$<$ \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} $>$}]{moves,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Adds the 8 possible positions a knight can move to 
+\begin{DoxyParams}{Parameters}
+{\em moves} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmain_1_1pieces_1_1_piece_aef1e0909297d1b3fd0974b4be25751c4}{}\label{classmain_1_1pieces_1_1_piece_aef1e0909297d1b3fd0974b4be25751c4} 
+\index{main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}!check\+All\+Diagonals@{check\+All\+Diagonals}}
+\index{check\+All\+Diagonals@{check\+All\+Diagonals}!main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{check\+All\+Diagonals()}{checkAllDiagonals()}}
+{\footnotesize\ttfamily void main.\+pieces.\+Piece.\+check\+All\+Diagonals (\begin{DoxyParamCaption}\item[{Array\+List$<$ \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} $>$}]{moves,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\subparagraph*{}
+
+Move Methods \subparagraph*{}
+
+Checks all the spaces diagonal to the location given by (x,y) and adds them to the moves Array\+List if they are available 
+\begin{DoxyParams}{Parameters}
+{\em moves} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmain_1_1pieces_1_1_piece_ae50779c5a6de51ac05c6469e4660a82b}{}\label{classmain_1_1pieces_1_1_piece_ae50779c5a6de51ac05c6469e4660a82b} 
+\index{main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}!check\+All\+Rows\+Columns@{check\+All\+Rows\+Columns}}
+\index{check\+All\+Rows\+Columns@{check\+All\+Rows\+Columns}!main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{check\+All\+Rows\+Columns()}{checkAllRowsColumns()}}
+{\footnotesize\ttfamily void main.\+pieces.\+Piece.\+check\+All\+Rows\+Columns (\begin{DoxyParamCaption}\item[{Array\+List$<$ \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} $>$}]{moves,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks all the spaces in the same row and column to the location given by (x,y) and adds them to the moves Array\+List if they are available 
+\begin{DoxyParams}{Parameters}
+{\em moves} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmain_1_1pieces_1_1_piece_a52545d99f7a6c36b99cfcf40fd0a9cef}{}\label{classmain_1_1pieces_1_1_piece_a52545d99f7a6c36b99cfcf40fd0a9cef} 
+\index{main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}!get\+Color@{get\+Color}}
+\index{get\+Color@{get\+Color}!main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{get\+Color()}{getColor()}}
+{\footnotesize\ttfamily String main.\+pieces.\+Piece.\+get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\subparagraph*{}
+
+Getter/\+Setter Methods \subparagraph*{}\hypertarget{classmain_1_1pieces_1_1_piece_ae778ce746ff427326514c696cad72aba}{}\label{classmain_1_1pieces_1_1_piece_ae778ce746ff427326514c696cad72aba} 
+\index{main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily abstract String main.\+pieces.\+Piece.\+get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Return the type of the piece \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classmain_1_1pieces_1_1_piece_a164f24eb41f07fe4cb93d960f24d8638}{}\label{classmain_1_1pieces_1_1_piece_a164f24eb41f07fe4cb93d960f24d8638} 
+\index{main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}!is\+Coordinate\+Available@{is\+Coordinate\+Available}}
+\index{is\+Coordinate\+Available@{is\+Coordinate\+Available}!main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{is\+Coordinate\+Available()}{isCoordinateAvailable()}}
+{\footnotesize\ttfamily boolean main.\+pieces.\+Piece.\+is\+Coordinate\+Available (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks the space to see if its available or occupied by opposing piece \begin{DoxyReturn}{Returns}
+A coordinate for the space if it is available 
+\end{DoxyReturn}
+\hypertarget{classmain_1_1pieces_1_1_piece_a74326d9253471ad25f8edb83bec207f6}{}\label{classmain_1_1pieces_1_1_piece_a74326d9253471ad25f8edb83bec207f6} 
+\index{main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}!is\+Empty\+Coordinate@{is\+Empty\+Coordinate}}
+\index{is\+Empty\+Coordinate@{is\+Empty\+Coordinate}!main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{is\+Empty\+Coordinate()}{isEmptyCoordinate()}}
+{\footnotesize\ttfamily boolean main.\+pieces.\+Piece.\+is\+Empty\+Coordinate (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Return true/false if the coordinate is unoccupied 
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classmain_1_1pieces_1_1_piece_a92a37b2f68604a6f2c8ece28d9a96080}{}\label{classmain_1_1pieces_1_1_piece_a92a37b2f68604a6f2c8ece28d9a96080} 
+\index{main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}!possible\+Moves@{possible\+Moves}}
+\index{possible\+Moves@{possible\+Moves}!main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{possible\+Moves()}{possibleMoves()}}
+{\footnotesize\ttfamily abstract Array\+List$<$\hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate}$>$ main.\+pieces.\+Piece.\+possible\+Moves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+\subparagraph*{}
+
+Abstract Methods \subparagraph*{}
+
+Return an arraylist of coordinates of all the possible moves this piece can make \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classmain_1_1pieces_1_1_piece_a58d0ca1c1f09ffd2470a4aec1b7e6854}{}\label{classmain_1_1pieces_1_1_piece_a58d0ca1c1f09ffd2470a4aec1b7e6854} 
+\index{main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}!remove\+Piece@{remove\+Piece}}
+\index{remove\+Piece@{remove\+Piece}!main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{remove\+Piece()}{removePiece()}}
+{\footnotesize\ttfamily void main.\+pieces.\+Piece.\+remove\+Piece (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets the pieces coordinates to null \hypertarget{classmain_1_1pieces_1_1_piece_a2ffc0c01f80d164e8d471272061545d9}{}\label{classmain_1_1pieces_1_1_piece_a2ffc0c01f80d164e8d471272061545d9} 
+\index{main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}!set\+Coordinate@{set\+Coordinate}}
+\index{set\+Coordinate@{set\+Coordinate}!main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{set\+Coordinate()}{setCoordinate()}}
+{\footnotesize\ttfamily void main.\+pieces.\+Piece.\+set\+Coordinate (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\subparagraph*{}
+
+Coordinate Methods \subparagraph*{}
+
+Update the coordinates of the piece \hypertarget{classmain_1_1pieces_1_1_piece_a528845eb51d394c21fd0f3d8a8011696}{}\label{classmain_1_1pieces_1_1_piece_a528845eb51d394c21fd0f3d8a8011696} 
+\index{main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!main\+::pieces\+::\+Piece@{main\+::pieces\+::\+Piece}}
+\subsubsection{\texorpdfstring{to\+String()}{toString()}}
+{\footnotesize\ttfamily abstract String main.\+pieces.\+Piece.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Return the string representation of the piece \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/pieces/Piece.\+java\end{DoxyCompactItemize}

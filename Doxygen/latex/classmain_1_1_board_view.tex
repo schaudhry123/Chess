@@ -1,0 +1,133 @@
+\hypertarget{classmain_1_1_board_view}{}\section{main.\+Board\+View Class Reference}
+\label{classmain_1_1_board_view}\index{main.\+Board\+View@{main.\+Board\+View}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classmain_1_1_board_view_abf8539621e57668f50384263421bcd64}{print\+Alert} (String alert)
+\item 
+void \hyperlink{classmain_1_1_board_view_afc93a6cc3fef67fcee90f8e810b52661}{print\+Player\+Score} (\hyperlink{classmain_1_1_player}{Player} white\+Player, \hyperlink{classmain_1_1_player}{Player} black\+Player, int move)
+\item 
+\hypertarget{classmain_1_1_board_view_a3f764ba1506eff88c6a7af6d8e1cd730}{}\label{classmain_1_1_board_view_a3f764ba1506eff88c6a7af6d8e1cd730} 
+void {\bfseries highlight\+Piece\+And\+Moves} (\hyperlink{classmain_1_1pieces_1_1_piece}{Piece} piece, int x, int y)
+\item 
+void \hyperlink{classmain_1_1_board_view_ade8846909c28b72183b98969738d2241}{clear\+Highlighted\+Moves} ()
+\item 
+void \hyperlink{classmain_1_1_board_view_ac99be3e6d9ed0a37b4021a1d784e9441}{draw\+Chess\+Board} ()
+\item 
+String \hyperlink{classmain_1_1_board_view_a8d424c35461ea83d9f5e4cae9b00b90a}{set\+Player\+Name} (String player)
+\item 
+int \hyperlink{classmain_1_1_board_view_a82d7f743c08c4f25eb327af4d42d3786}{get\+Restart\+Confirmation} ()
+\item 
+void \hyperlink{classmain_1_1_board_view_a2ad894c74ae1e240dabe0739ba2c3367}{make\+Move\+G\+UI} (\hyperlink{classmain_1_1pieces_1_1_piece}{Piece} piece, \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} start, \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} destination)
+\item 
+\hypertarget{classmain_1_1_board_view_a6be97af8124c34611b68642eb2ab61c3}{}\label{classmain_1_1_board_view_a6be97af8124c34611b68642eb2ab61c3} 
+void {\bfseries undo\+Move\+G\+UI} (\hyperlink{classmain_1_1pieces_1_1_piece}{Piece} piece, \hyperlink{classmain_1_1pieces_1_1_piece}{Piece} existing, \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} start, \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} destination)
+\item 
+void \hyperlink{classmain_1_1_board_view_a44d95afe82790b029cc40627ab5a88cb}{win\+Game} (\hyperlink{classmain_1_1_player}{Player} winner)
+\item 
+\hyperlink{classmain_1_1_board_view_afe3a4667992e92840f301182e8a5531e}{Board\+View} (\hyperlink{classmain_1_1_game_controller}{Game\+Controller} game\+Controller)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by samir on 9/13/16. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmain_1_1_board_view_afe3a4667992e92840f301182e8a5531e}{}\label{classmain_1_1_board_view_afe3a4667992e92840f301182e8a5531e} 
+\index{main\+::\+Board\+View@{main\+::\+Board\+View}!Board\+View@{Board\+View}}
+\index{Board\+View@{Board\+View}!main\+::\+Board\+View@{main\+::\+Board\+View}}
+\subsubsection{\texorpdfstring{Board\+View()}{BoardView()}}
+{\footnotesize\ttfamily main.\+Board\+View.\+Board\+View (\begin{DoxyParamCaption}\item[{\hyperlink{classmain_1_1_game_controller}{Game\+Controller}}]{game\+Controller }\end{DoxyParamCaption})}
+
+Create the G\+UI 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmain_1_1_board_view_ade8846909c28b72183b98969738d2241}{}\label{classmain_1_1_board_view_ade8846909c28b72183b98969738d2241} 
+\index{main\+::\+Board\+View@{main\+::\+Board\+View}!clear\+Highlighted\+Moves@{clear\+Highlighted\+Moves}}
+\index{clear\+Highlighted\+Moves@{clear\+Highlighted\+Moves}!main\+::\+Board\+View@{main\+::\+Board\+View}}
+\subsubsection{\texorpdfstring{clear\+Highlighted\+Moves()}{clearHighlightedMoves()}}
+{\footnotesize\ttfamily void main.\+Board\+View.\+clear\+Highlighted\+Moves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clear the highlighted squares \hypertarget{classmain_1_1_board_view_ac99be3e6d9ed0a37b4021a1d784e9441}{}\label{classmain_1_1_board_view_ac99be3e6d9ed0a37b4021a1d784e9441} 
+\index{main\+::\+Board\+View@{main\+::\+Board\+View}!draw\+Chess\+Board@{draw\+Chess\+Board}}
+\index{draw\+Chess\+Board@{draw\+Chess\+Board}!main\+::\+Board\+View@{main\+::\+Board\+View}}
+\subsubsection{\texorpdfstring{draw\+Chess\+Board()}{drawChessBoard()}}
+{\footnotesize\ttfamily void main.\+Board\+View.\+draw\+Chess\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+=================================== \subsection*{Draw UI Components }
+
+Gets the chess model from the backend and redraws the front end to update the positions of the pieces \hypertarget{classmain_1_1_board_view_a82d7f743c08c4f25eb327af4d42d3786}{}\label{classmain_1_1_board_view_a82d7f743c08c4f25eb327af4d42d3786} 
+\index{main\+::\+Board\+View@{main\+::\+Board\+View}!get\+Restart\+Confirmation@{get\+Restart\+Confirmation}}
+\index{get\+Restart\+Confirmation@{get\+Restart\+Confirmation}!main\+::\+Board\+View@{main\+::\+Board\+View}}
+\subsubsection{\texorpdfstring{get\+Restart\+Confirmation()}{getRestartConfirmation()}}
+{\footnotesize\ttfamily int main.\+Board\+View.\+get\+Restart\+Confirmation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Pop up the restart confirmation and return the response by the player \begin{DoxyReturn}{Returns}
+Response by the player 
+\end{DoxyReturn}
+\hypertarget{classmain_1_1_board_view_a2ad894c74ae1e240dabe0739ba2c3367}{}\label{classmain_1_1_board_view_a2ad894c74ae1e240dabe0739ba2c3367} 
+\index{main\+::\+Board\+View@{main\+::\+Board\+View}!make\+Move\+G\+UI@{make\+Move\+G\+UI}}
+\index{make\+Move\+G\+UI@{make\+Move\+G\+UI}!main\+::\+Board\+View@{main\+::\+Board\+View}}
+\subsubsection{\texorpdfstring{make\+Move\+G\+U\+I()}{makeMoveGUI()}}
+{\footnotesize\ttfamily void main.\+Board\+View.\+make\+Move\+G\+UI (\begin{DoxyParamCaption}\item[{\hyperlink{classmain_1_1pieces_1_1_piece}{Piece}}]{piece,  }\item[{\hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate}}]{start,  }\item[{\hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate}}]{destination }\end{DoxyParamCaption})}
+
+Make a move on the G\+UI, moving a piece to its new coordinate 
+\begin{DoxyParams}{Parameters}
+{\em piece} & \\
+\hline
+{\em start} & \\
+\hline
+{\em destination} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmain_1_1_board_view_abf8539621e57668f50384263421bcd64}{}\label{classmain_1_1_board_view_abf8539621e57668f50384263421bcd64} 
+\index{main\+::\+Board\+View@{main\+::\+Board\+View}!print\+Alert@{print\+Alert}}
+\index{print\+Alert@{print\+Alert}!main\+::\+Board\+View@{main\+::\+Board\+View}}
+\subsubsection{\texorpdfstring{print\+Alert()}{printAlert()}}
+{\footnotesize\ttfamily void main.\+Board\+View.\+print\+Alert (\begin{DoxyParamCaption}\item[{String}]{alert }\end{DoxyParamCaption})}
+
+=================================== \subsection*{Print/\+Alert Methods }\hypertarget{classmain_1_1_board_view_afc93a6cc3fef67fcee90f8e810b52661}{}\label{classmain_1_1_board_view_afc93a6cc3fef67fcee90f8e810b52661} 
+\index{main\+::\+Board\+View@{main\+::\+Board\+View}!print\+Player\+Score@{print\+Player\+Score}}
+\index{print\+Player\+Score@{print\+Player\+Score}!main\+::\+Board\+View@{main\+::\+Board\+View}}
+\subsubsection{\texorpdfstring{print\+Player\+Score()}{printPlayerScore()}}
+{\footnotesize\ttfamily void main.\+Board\+View.\+print\+Player\+Score (\begin{DoxyParamCaption}\item[{\hyperlink{classmain_1_1_player}{Player}}]{white\+Player,  }\item[{\hyperlink{classmain_1_1_player}{Player}}]{black\+Player,  }\item[{int}]{move }\end{DoxyParamCaption})}
+
+Prints the player score on the G\+UI, bolding the player whose turn it is 
+\begin{DoxyParams}{Parameters}
+{\em white\+Player} & \\
+\hline
+{\em black\+Player} & \\
+\hline
+{\em move} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmain_1_1_board_view_a8d424c35461ea83d9f5e4cae9b00b90a}{}\label{classmain_1_1_board_view_a8d424c35461ea83d9f5e4cae9b00b90a} 
+\index{main\+::\+Board\+View@{main\+::\+Board\+View}!set\+Player\+Name@{set\+Player\+Name}}
+\index{set\+Player\+Name@{set\+Player\+Name}!main\+::\+Board\+View@{main\+::\+Board\+View}}
+\subsubsection{\texorpdfstring{set\+Player\+Name()}{setPlayerName()}}
+{\footnotesize\ttfamily String main.\+Board\+View.\+set\+Player\+Name (\begin{DoxyParamCaption}\item[{String}]{player }\end{DoxyParamCaption})}
+
+Allow for custom player names at the beginning of the game\+Controller 
+\begin{DoxyParams}{Parameters}
+{\em player} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classmain_1_1_board_view_a44d95afe82790b029cc40627ab5a88cb}{}\label{classmain_1_1_board_view_a44d95afe82790b029cc40627ab5a88cb} 
+\index{main\+::\+Board\+View@{main\+::\+Board\+View}!win\+Game@{win\+Game}}
+\index{win\+Game@{win\+Game}!main\+::\+Board\+View@{main\+::\+Board\+View}}
+\subsubsection{\texorpdfstring{win\+Game()}{winGame()}}
+{\footnotesize\ttfamily void main.\+Board\+View.\+win\+Game (\begin{DoxyParamCaption}\item[{\hyperlink{classmain_1_1_player}{Player}}]{winner }\end{DoxyParamCaption})}
+
+End the game\+Controller by setting game\+Started to false. Redraw the model to show the last move. Show a dialog that prints the winning player 
+\begin{DoxyParams}{Parameters}
+{\em winner} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/Board\+View.\+java\end{DoxyCompactItemize}

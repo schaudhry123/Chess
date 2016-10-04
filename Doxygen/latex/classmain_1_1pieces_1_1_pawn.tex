@@ -1,0 +1,70 @@
+\hypertarget{classmain_1_1pieces_1_1_pawn}{}\section{main.\+pieces.\+Pawn Class Reference}
+\label{classmain_1_1pieces_1_1_pawn}\index{main.\+pieces.\+Pawn@{main.\+pieces.\+Pawn}}
+Inheritance diagram for main.\+pieces.\+Pawn\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmain_1_1pieces_1_1_pawn}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmain_1_1pieces_1_1_pawn_ac0b9086627b2762dc851ae70945b0c9b}{Pawn} (int x, int y, String color)
+\item 
+String \hyperlink{classmain_1_1pieces_1_1_pawn_a5773cf85f79709da9dec92df7c98d64b}{get\+Type} ()
+\item 
+\hypertarget{classmain_1_1pieces_1_1_pawn_a9005e61dabd7be5a4755390cffda1709}{}\label{classmain_1_1pieces_1_1_pawn_a9005e61dabd7be5a4755390cffda1709} 
+String {\bfseries to\+String} ()
+\item 
+Array\+List$<$ \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} $>$ \hyperlink{classmain_1_1pieces_1_1_pawn_a06262375d095ccab099b861dc81bf5f1}{possible\+Moves} ()
+\item 
+void \hyperlink{classmain_1_1pieces_1_1_pawn_ae699e118a4a564de9d53839307f8aebe}{add\+Diagonal\+If\+Enemy\+Occupied} (Array\+List$<$ \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} $>$ moves, int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Created by samir on 9/2/16. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmain_1_1pieces_1_1_pawn_ac0b9086627b2762dc851ae70945b0c9b}{}\label{classmain_1_1pieces_1_1_pawn_ac0b9086627b2762dc851ae70945b0c9b} 
+\index{main\+::pieces\+::\+Pawn@{main\+::pieces\+::\+Pawn}!Pawn@{Pawn}}
+\index{Pawn@{Pawn}!main\+::pieces\+::\+Pawn@{main\+::pieces\+::\+Pawn}}
+\subsubsection{\texorpdfstring{Pawn()}{Pawn()}}
+{\footnotesize\ttfamily main.\+pieces.\+Pawn.\+Pawn (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{String}]{color }\end{DoxyParamCaption})}
+
+Constructor taking in x and y values for coordinates 
+
+\subsection{Member Function Documentation}
+\hypertarget{classmain_1_1pieces_1_1_pawn_ae699e118a4a564de9d53839307f8aebe}{}\label{classmain_1_1pieces_1_1_pawn_ae699e118a4a564de9d53839307f8aebe} 
+\index{main\+::pieces\+::\+Pawn@{main\+::pieces\+::\+Pawn}!add\+Diagonal\+If\+Enemy\+Occupied@{add\+Diagonal\+If\+Enemy\+Occupied}}
+\index{add\+Diagonal\+If\+Enemy\+Occupied@{add\+Diagonal\+If\+Enemy\+Occupied}!main\+::pieces\+::\+Pawn@{main\+::pieces\+::\+Pawn}}
+\subsubsection{\texorpdfstring{add\+Diagonal\+If\+Enemy\+Occupied()}{addDiagonalIfEnemyOccupied()}}
+{\footnotesize\ttfamily void main.\+pieces.\+Pawn.\+add\+Diagonal\+If\+Enemy\+Occupied (\begin{DoxyParamCaption}\item[{Array\+List$<$ \hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate} $>$}]{moves,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Checks the pieces diagonally in front of the pawn for enemies If there are enemies, it is a valid move. Else, not a valid move. 
+\begin{DoxyParams}{Parameters}
+{\em moves} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmain_1_1pieces_1_1_pawn_a5773cf85f79709da9dec92df7c98d64b}{}\label{classmain_1_1pieces_1_1_pawn_a5773cf85f79709da9dec92df7c98d64b} 
+\index{main\+::pieces\+::\+Pawn@{main\+::pieces\+::\+Pawn}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!main\+::pieces\+::\+Pawn@{main\+::pieces\+::\+Pawn}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily String main.\+pieces.\+Pawn.\+get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the type of this piece \hypertarget{classmain_1_1pieces_1_1_pawn_a06262375d095ccab099b861dc81bf5f1}{}\label{classmain_1_1pieces_1_1_pawn_a06262375d095ccab099b861dc81bf5f1} 
+\index{main\+::pieces\+::\+Pawn@{main\+::pieces\+::\+Pawn}!possible\+Moves@{possible\+Moves}}
+\index{possible\+Moves@{possible\+Moves}!main\+::pieces\+::\+Pawn@{main\+::pieces\+::\+Pawn}}
+\subsubsection{\texorpdfstring{possible\+Moves()}{possibleMoves()}}
+{\footnotesize\ttfamily Array\+List$<$\hyperlink{classmain_1_1model_1_1_coordinate}{Coordinate}$>$ main.\+pieces.\+Pawn.\+possible\+Moves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns an Array\+List with the coordinates of the possible moves this pawn can make 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/pieces/Pawn.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,100 @@
+\hypertarget{classmain_1_1_player}{}\section{main.\+Player Class Reference}
+\label{classmain_1_1_player}\index{main.\+Player@{main.\+Player}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmain_1_1_player_a7a07b12fa4f52134a9b68abf32b0cb65}{Player} (String color, String name)
+\item 
+void \hyperlink{classmain_1_1_player_a0ab2e50adb7dd825ae62268459dfb633}{reset\+State} ()
+\item 
+void \hyperlink{classmain_1_1_player_a20e4d2604d95857e73ba9ce628b2037b}{check\+Board\+Status} (\hyperlink{classmain_1_1_board_view}{Board\+View} board\+View, \hyperlink{classmain_1_1model_1_1_board}{Board} board)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \hyperlink{classmain_1_1_player_a154e7eebeeab65000f917c736f6cb822}{validate\+Piece} (\hyperlink{classmain_1_1pieces_1_1_piece}{Piece} piece, String color, \hyperlink{classmain_1_1_board_view}{Board\+View} board\+View, \hyperlink{classmain_1_1pieces_1_1_piece}{Piece} selected\+Piece)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmain_1_1_player_a676bda6b0543e4e4093955835f1829da}{}\label{classmain_1_1_player_a676bda6b0543e4e4093955835f1829da} 
+String {\bfseries color}
+\item 
+\hypertarget{classmain_1_1_player_a3214a3ccfb412f6418cb30629efbdba8}{}\label{classmain_1_1_player_a3214a3ccfb412f6418cb30629efbdba8} 
+boolean {\bfseries check}
+\item 
+\hypertarget{classmain_1_1_player_a37183b7b9911bca48917a4d560fb5a08}{}\label{classmain_1_1_player_a37183b7b9911bca48917a4d560fb5a08} 
+boolean {\bfseries check\+Mate}
+\item 
+\hypertarget{classmain_1_1_player_a789e767891852d4225dd3374d8c1507d}{}\label{classmain_1_1_player_a789e767891852d4225dd3374d8c1507d} 
+int {\bfseries score}
+\item 
+\hypertarget{classmain_1_1_player_a52da3f9931858dcde58a377923e98073}{}\label{classmain_1_1_player_a52da3f9931858dcde58a377923e98073} 
+String {\bfseries name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by samir on 9/5/16. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmain_1_1_player_a7a07b12fa4f52134a9b68abf32b0cb65}{}\label{classmain_1_1_player_a7a07b12fa4f52134a9b68abf32b0cb65} 
+\index{main\+::\+Player@{main\+::\+Player}!Player@{Player}}
+\index{Player@{Player}!main\+::\+Player@{main\+::\+Player}}
+\subsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily main.\+Player.\+Player (\begin{DoxyParamCaption}\item[{String}]{color,  }\item[{String}]{name }\end{DoxyParamCaption})}
+
+\hyperlink{classmain_1_1_player}{Player} constructor 
+\begin{DoxyParams}{Parameters}
+{\em color} & \\
+\hline
+{\em name} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmain_1_1_player_a20e4d2604d95857e73ba9ce628b2037b}{}\label{classmain_1_1_player_a20e4d2604d95857e73ba9ce628b2037b} 
+\index{main\+::\+Player@{main\+::\+Player}!check\+Board\+Status@{check\+Board\+Status}}
+\index{check\+Board\+Status@{check\+Board\+Status}!main\+::\+Player@{main\+::\+Player}}
+\subsubsection{\texorpdfstring{check\+Board\+Status()}{checkBoardStatus()}}
+{\footnotesize\ttfamily void main.\+Player.\+check\+Board\+Status (\begin{DoxyParamCaption}\item[{\hyperlink{classmain_1_1_board_view}{Board\+View}}]{board\+View,  }\item[{\hyperlink{classmain_1_1model_1_1_board}{Board}}]{board }\end{DoxyParamCaption})}
+
+Checks the board\+G\+UI after a move to see if the move placed this player in check or checkmate 
+\begin{DoxyParams}{Parameters}
+{\em board\+View} & \\
+\hline
+{\em board} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmain_1_1_player_a0ab2e50adb7dd825ae62268459dfb633}{}\label{classmain_1_1_player_a0ab2e50adb7dd825ae62268459dfb633} 
+\index{main\+::\+Player@{main\+::\+Player}!reset\+State@{reset\+State}}
+\index{reset\+State@{reset\+State}!main\+::\+Player@{main\+::\+Player}}
+\subsubsection{\texorpdfstring{reset\+State()}{resetState()}}
+{\footnotesize\ttfamily void main.\+Player.\+reset\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reset the check and checkmate state of this player \hypertarget{classmain_1_1_player_a154e7eebeeab65000f917c736f6cb822}{}\label{classmain_1_1_player_a154e7eebeeab65000f917c736f6cb822} 
+\index{main\+::\+Player@{main\+::\+Player}!validate\+Piece@{validate\+Piece}}
+\index{validate\+Piece@{validate\+Piece}!main\+::\+Player@{main\+::\+Player}}
+\subsubsection{\texorpdfstring{validate\+Piece()}{validatePiece()}}
+{\footnotesize\ttfamily static boolean main.\+Player.\+validate\+Piece (\begin{DoxyParamCaption}\item[{\hyperlink{classmain_1_1pieces_1_1_piece}{Piece}}]{piece,  }\item[{String}]{color,  }\item[{\hyperlink{classmain_1_1_board_view}{Board\+View}}]{board\+View,  }\item[{\hyperlink{classmain_1_1pieces_1_1_piece}{Piece}}]{selected\+Piece }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Validates that the piece at the given coordinate is a valid piece that the player controls If not valid, alert the player with the corresponding message 
+\begin{DoxyParams}{Parameters}
+{\em piece} & \\
+\hline
+{\em color} & \\
+\hline
+{\em board\+View} & \\
+\hline
+{\em selected\+Piece} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if valid, False if not 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/Player.\+java\end{DoxyCompactItemize}

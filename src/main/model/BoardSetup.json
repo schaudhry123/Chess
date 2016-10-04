@@ -1,0 +1,196 @@
+{
+  "pieces": [
+    {
+      "piece": "pawn",
+      "x": 1,
+      "y": 0,
+      "color": "B"
+    },
+    {
+      "piece": "pawn",
+      "x": 1,
+      "y": 1,
+      "color": "B"
+    },
+    {
+      "piece": "pawn",
+      "x": 1,
+      "y": 2,
+      "color": "B"
+    },
+    {
+      "piece": "pawn",
+      "x": 1,
+      "y": 3,
+      "color": "B"
+    },
+    {
+      "piece": "pawn",
+      "x": 1,
+      "y": 4,
+      "color": "B"
+    },
+    {
+      "piece": "pawn",
+      "x": 1,
+      "y": 5,
+      "color": "B"
+    },
+    {
+      "piece": "pawn",
+      "x": 1,
+      "y": 6,
+      "color": "B"
+    },
+    {
+      "piece": "pawn",
+      "x": 1,
+      "y": 7,
+      "color": "B"
+    },
+    {
+      "piece": "rook",
+      "x": 0,
+      "y": 0,
+      "color": "B"
+    },
+    {
+      "piece": "rook",
+      "x": 0,
+      "y": 7,
+      "color": "B"
+    },
+    {
+      "piece": "knight",
+      "x": 0,
+      "y": 1,
+      "color": "B"
+    },
+    {
+      "piece": "knight",
+      "x": 0,
+      "y": 6,
+      "color": "B"
+    },
+    {
+      "piece": "bishop",
+      "x": 0,
+      "y": 2,
+      "color": "B"
+    },
+    {
+      "piece": "bishop",
+      "x": 0,
+      "y": 5,
+      "color": "B"
+    },
+    {
+      "piece": "queen",
+      "x": 0,
+      "y": 3,
+      "color": "B"
+    },
+    {
+      "piece": "king",
+      "x": 0,
+      "y": 4,
+      "color": "B"
+    },
+    {
+      "piece": "pawn",
+      "x": 6,
+      "y": 0,
+      "color": "W"
+    },
+    {
+      "piece": "pawn",
+      "x": 6,
+      "y": 1,
+      "color": "W"
+    },
+    {
+      "piece": "pawn",
+      "x": 6,
+      "y": 2,
+      "color": "W"
+    },
+    {
+      "piece": "pawn",
+      "x": 6,
+      "y": 3,
+      "color": "W"
+    },
+    {
+      "piece": "pawn",
+      "x": 6,
+      "y": 4,
+      "color": "W"
+    },
+    {
+      "piece": "pawn",
+      "x": 6,
+      "y": 5,
+      "color": "W"
+    },
+    {
+      "piece": "pawn",
+      "x": 6,
+      "y": 6,
+      "color": "W"
+    },
+    {
+      "piece": "pawn",
+      "x": 6,
+      "y": 7,
+      "color": "W"
+    },
+    {
+      "piece": "rook",
+      "x": 7,
+      "y": 0,
+      "color": "W"
+    },
+    {
+      "piece": "rook",
+      "x": 7,
+      "y": 7,
+      "color": "W"
+    },
+    {
+      "piece": "knight",
+      "x": 7,
+      "y": 1,
+      "color": "W"
+    },
+    {
+      "piece": "knight",
+      "x": 7,
+      "y": 6,
+      "color": "W"
+    },
+    {
+      "piece": "bishop",
+      "x": 7,
+      "y": 2,
+      "color": "W"
+    },
+    {
+      "piece": "bishop",
+      "x": 7,
+      "y": 5,
+      "color": "W"
+    },
+    {
+      "piece": "queen",
+      "x": 7,
+      "y": 3,
+      "color": "W"
+    },
+    {
+      "piece": "king",
+      "x": 7,
+      "y": 4,
+      "color": "W"
+    }
+  ]
+}
